@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tags</title>
+</head>
+<body>
+   <h2>This is HTML forms tutorials.</h2> 
+   <form action="backend.php"><!--This action tag defines how form's backend will work.-->
+    <!--Label tutorial given below.-->
+    <label for ="name">Labeled Name</label>
+        <div>
+            <input type="text" id="name"><!--id and label name must be same.-->
+        </div>
+        <!-- If Labeled tag is applied then when you click on Text box gets imputbox gets selected automatically. -->
+        <!-- Label Example ends here -->
+    <div>
+        Name : <input type="text"><!--Name tag defines how the imput would be taken from the backend.-->
+    </div>
+    <div>
+        Role : <input type="text"><!--Name tag defines how the imput would be taken from the backend.-->
+    </div>
+    <div>
+        Email : <input type="email" name="myEmail"><!--Name tag defines how the imput would be taken from the backend.-->
+    </div>
+    <div>
+        Date : <input type="date" name="myDate">
+    </div>
+    <div>
+        Bonus : <input type="number" name="myBonus">
+    </div>
+    <div>
+        Are you Eligible : <input type="checkbox" name="myEligibility">
+    </div>
+    <!-- Can we made checked by default if write checked in input type. Example is given below -->
+    <div>
+        Are you Eligible (Checked) : <input type="checkbox" name="myEligibility" checked>
+    </div>
+    <div>
+        Gender : Male <input type="radio" name="myGender"> Female <input type="checkbox" name="myGender">
+    </div>
+    <div>
+        Write about yourself : <textarea name="myText" cols="90" rows="10"></textarea>
+    </div>
+    <!--Select tag example is given below.-->
+    <div>
+        Select Car : <select name="myCar">
+            <option value="ind">Indica</option>
+            <option value="swi">Swift</option>
+            <option value="bre" selected>Brezza</option><!--Selected text allows to select a default value.-->
+        </select>
+    </div>
+    <!--Select Example Ends here.-->
+    <div>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </div>
+</form>
+</body>
+</html>
